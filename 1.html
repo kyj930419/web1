@@ -3,6 +3,17 @@
   <head>
     <title>WEB-1 HTML</title>
     <meta charset="utf-8">
+
+<!-- 방문자 분석기 -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121794016-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-121794016-1');
+</script>
+
   </head>
   <body>
     <h1><a href="index.html">WEB</a></h1>
@@ -26,7 +37,7 @@
     documents by denoting structural semantics for text such as headings, paragraphs,
     lists, links, quotes and other items. HTML elements are delineated by tags,
     written using angle brackets.</p>
-    <table border="1">
+    <p><table border="1">
       <tr>
           <td>W3C</td>
           <td>Web 국제 민간 표준화 기구</td>
@@ -35,9 +46,52 @@
           <td>https://unsplash.com</td>
           <td>무료 이미지</td>
       </tr>
-    </table>
+    </table></p>
+
+<!-- 동영상 -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tZooW6PritE"
+frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<!-- 댓글 -->
+<div id="disqus_thread"></div>
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://kyjhtml.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<!-- 채팅기능 -->
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5b3b3bac4af8e57442dc497f/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
   </body>
 </html>
+
+
 <!--
 주요 태그
 strong : 글자 진하게
@@ -57,5 +111,10 @@ body: 본문은 body 태그 안에
 html : head 와 body를 감싸는 헤드
 <!doctype html> : HTML로 만들어졌다는 것을 표현하는 코드 (html5 이후)
 a : 링크를 거는 태그, href : 링크 주소, target: 클릭시 링크 창 _blank 새창, title 링크의 내용 툴팁으로 보여줌
+iframe : 다른 웹의 부분을 가져올 때 사용하는 태그
 
+동영상 삽입 : 유튜브 활용
+댓글 기능 추가 : discus, LiveRe
+채팅 기능 추가 : tawk
+방분자 분석기 : analytics.google.com
 -->
